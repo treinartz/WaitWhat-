@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>MyPresentation</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>Slide 2</section>
+				
+				<section>
+					<h1>Overview</h1>
+					<p class="fragment"><ul>
+							<li>Version control</li>
+							<li>Git concepts</li>
+							<li>Using git locally</li>
+							<li>Using git with a (Gitlab) remote</li>
+							<li>Undoing mistakes</li>
+							<li>Branches</li>
+							<li>Caring for your commit history</li>
+					</ul></p>
+					<aside class="notes">
+					</aside>
+				</section>
+			<section>
+					<h2>Git</h2>
+          <p>Distributed version control</p>
+					<p class="fragment"><ul>
+							<li>every copy of the project is a full repository</li><br/>
+              <li>Advantages / disadvantages</li>
+							<li>- steep learning curve</li>
+							<li>+ save changes locally when working offline</li>
+							<li>+ branching</li>
+							<li>+ merging</li>
+							<li>+ every copy is a full backup</li>
+							<li>+ very fast</li>
+					</ul></p>
+				</section>
+		
+		<section data-markdown> 
+					<script type="text/template">
+					## But Why Mapping?
+					Why should we care about maps? Why are you here? [discuss]
+					</script>
+				</section>
+
+				<section data-background="img/image.png">
+				</section>
+				<section>
+					 <a href = "http://cnn.com">CNN</a>
+				</section>
+			
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
